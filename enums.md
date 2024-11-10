@@ -3,6 +3,9 @@
 ## BotStatus
 
 An enumeration representing the different statuses a bot can have.
+Here's the updated version of the documentation without the integers:
+
+---
 
 #### Values
 * `offline` : the bot is currently offline.
@@ -16,25 +19,36 @@ An enumeration representing the different statuses a bot can have.
 * `too_many_login` : there have been too many login attempts to the game server.
 * `maintenance` : the server is currently undergoing maintenance and is unavailable.
 * `server_busy` : the server is currently busy and cannot handle any more connections.
-* `guest_limit` : the maximum number of guests for the ip has been reached.
+* `guest_limit` : the maximum number of guests for the IP has been reached.
 * `guest_disabled` : guest accounts are currently disabled.
-* `account_restricted` : the account is restricted from growtopia.
-* `network_restricted` : maximum supported number of bots in network is reached.
-* `http_block` : the server is blocking HTTP connections from bot ip.
+* `account_restricted` : the account is restricted from Growtopia.
+* `network_restricted` : the maximum supported number of bots in the network is reached.
+* `http_block` : the server is blocking HTTP connections from the bot's IP.
 * `bad_name_length` : the bot name is too short or too long.
 * `invalid_account` : the bot is invalid.
 * `error_connecting` : there was an error connecting to the server.
 * `logon_fail` : the bot failed to log in.
-* `captcha_requested` : captcha requested by gt.
-* `mod_entered` : a mod entered bot's world.
-* `player_entered` : a player entered bot's world.
-* `high_load` : the bot's subserver is currently on high load.
-* `high_ping` : the bot's ping is currently is higher than maximum-ping.
+* `captcha_requested` : CAPTCHA requested by GT.
+* `mod_entered` : a moderator entered the bot's world.
+* `player_entered` : a player entered the bot's world.
+* `high_load` : the bot's subserver is currently under high load.
+* `high_ping` : the bot's ping is currently higher than the maximum allowed.
 * `changing_subserver` : the bot's subserver is currently switching.
 * `stopped` : the bot's actions have been stopped by 'Auto-Stop'.
-* `getting_server_data` : bot is currently getting server data from gt-1 or gt-2.
-* `bypassing_server_data` : bot is currently bypassing server data with another proxy.
-
+* `getting_server_data` : the bot is currently retrieving server data from GT-1 or GT-2.
+* `bypassing_server_data` : the bot is currently bypassing server data with another proxy.
+* `steam_logon_fail` : the bot failed to log in via Steam.
+* `steam_not_linked` : the bot's account is not linked to Steam.
+* `server_issue` : there is a general issue with the server.
+* `ubi_disabled` : the bot's Ubisoft account is disabled.
+* `two_factor` : the bot's account requires two-factor authentication.
+* `gmaillog_required` : the bot's account requires a Gmail log in.
+* `linking_steam` : the bot is currently linking its account to Steam.
+* `retrieving_token` : the bot is retrieving a token.
+* `bad_inventory` : the bot has an issue with its inventory.
+* `bad_gateway` : the server encountered a bad gateway error.
+* `could_not_warp` : the bot failed to warp to a location.
+* `banwave_detected` : a ban wave has been detected.
 #### Example
 ```lua
 -- Get the current status of the bot
