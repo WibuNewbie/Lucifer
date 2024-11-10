@@ -2,11 +2,6 @@
 
 ## BotStatus
 
-An enumeration representing the different statuses a bot can have.
-Here's the updated version of the documentation without the integers:
-
----
-
 #### Values
 * `offline` : the bot is currently offline.
 * `online` : the bot is currently online.
