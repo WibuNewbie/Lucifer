@@ -55,7 +55,10 @@ A structure representing a bot.
 * `auto_plant` : AutoPlant Instance.
 * `console` : Console Instance.
 * `log` : Log Instance.
-
+* `random_reconnect` : A bool property that enable/disables random reconnect interval
+* `min_reconnect ` : Minimum delay for random reconnect in seconds
+* `max_reconnect` : Maximum delay for random reconnect in seconds
+* `move_x`
 #### Methods
 * `getWorld() -> World` : Returns bot world.
 * `getInventory() -> Inventory` : Returns bot inventory.
